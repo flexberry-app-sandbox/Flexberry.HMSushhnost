@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПриборыЗд",
+      "projection": "ПриборыЗдL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "НС",
+  "name": "IISHM_SushhnostНСE",
+  "className": "НСE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-н-с",
+      "modelProjection": "НСE"
+    }
+  ]
+}

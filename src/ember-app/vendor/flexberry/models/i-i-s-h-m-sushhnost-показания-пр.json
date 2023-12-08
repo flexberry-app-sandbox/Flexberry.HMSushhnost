@@ -1,0 +1,211 @@
+﻿{
+  "name": "IISHM_SushhnostПоказанияПр",
+  "modelName": "i-i-s-h-m-sushhnost-показания-пр",
+  "className": "ПоказанияПр",
+  "nameSpace": "IIS.HM_Sushhnost",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dateTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "m",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "p",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "q",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "t",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "приборыЗд",
+      "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПоказанияПрE",
+      "modelName": "i-i-s-h-m-sushhnost-показания-пр",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dateTime",
+          "caption": "Date time",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "t",
+          "caption": "T",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "p",
+          "caption": "P",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "m",
+          "caption": "M",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "q",
+          "caption": "Q",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "id",
+          "lookupValueField": "id",
+          "relationName": "ПриборыЗд",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Приборы зд",
+          "name": "приборыЗд",
+          "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПоказанияПрL",
+      "modelName": "i-i-s-h-m-sushhnost-показания-пр",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dateTime",
+          "caption": "Date time",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "t",
+          "caption": "T",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "p",
+          "caption": "P",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "m",
+          "caption": "M",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "q",
+          "caption": "Q",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПриборыЗд",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Id",
+          "name": "приборыЗд",
+          "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,76 @@
+<h3 class="ui header">{{t "forms.i-i-s-h-m-sushhnost-н-с-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.id
+      class=(if (v-get validationModel "id" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-sushhnost-н-с-e.id-caption")
+      data-test-i-i-s-h-m-sushhnost-н-с-e-id=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "id" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-н-с-e.dateTime-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.dateTime
+      class=(if (v-get validationModel "dateTime" "isInvalid") "error")
+      data-test-i-i-s-h-m-sushhnost-н-с-e-dateTime=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "dateTime" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-h-m-sushhnost-н-с-e-name="true">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-н-с-e.name-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-h-m-sushhnost-типы-н-с")
+      value=model.name
+      class=(if (v-get validationModel "name" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "name" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-н-с-e.приборыЗд-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.приборыЗд
+      displayAttributeName="id"
+      autocomplete=true
+      relationName="приборыЗд"
+      projection="ПриборыЗдL"
+      title=(t "forms.i-i-s-h-m-sushhnost-н-с-e.приборыЗд-caption")
+      readonly=readonly
+      componentName="приборыЗдLookup"
+      class=(if (v-get validationModel "приборыЗд" "isInvalid") "error")
+      data-test-i-i-s-h-m-sushhnost-н-с-e-приборыЗд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "приборыЗд" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-sushhnost-прибор-учёта-e",
+  "editForm": "i-i-s-h-m-sushhnost-прибор-учёта-e",
+  "external": false,
+  "caption": "Прибор учёта",
+  "name": "IISHM_SushhnostПриборУчётаL",
+  "className": "ПриборУчётаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-прибор-учёта",
+      "modelProjection": "ПриборУчётаL"
+    }
+  ]
+}

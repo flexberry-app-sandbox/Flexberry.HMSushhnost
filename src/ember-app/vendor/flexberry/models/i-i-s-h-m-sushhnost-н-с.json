@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISHM_SushhnostНС",
+  "modelName": "i-i-s-h-m-sushhnost-н-с",
+  "className": "НС",
+  "nameSpace": "IIS.HM_Sushhnost",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dateTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "i-i-s-h-m-sushhnost-типы-н-с",
+      "flexberryType": "ТипыНС",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "приборыЗд",
+      "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НСE",
+      "modelName": "i-i-s-h-m-sushhnost-н-с",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dateTime",
+          "caption": "Date time",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "id",
+          "lookupValueField": "id",
+          "relationName": "ПриборыЗд",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Приборы зд",
+          "name": "приборыЗд",
+          "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "НСL",
+      "modelName": "i-i-s-h-m-sushhnost-н-с",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "dateTime",
+          "caption": "Date time",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПриборыЗд",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Id",
+          "name": "приборыЗд",
+          "relatedTo": "i-i-s-h-m-sushhnost-приборы-зд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

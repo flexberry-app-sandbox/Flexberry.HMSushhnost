@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-sushhnost-здание-e",
+  "editForm": "i-i-s-h-m-sushhnost-здание-e",
+  "external": false,
+  "caption": "Здание",
+  "name": "IISHM_SushhnostЗданиеL",
+  "className": "ЗданиеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-здание",
+      "modelProjection": "ЗданиеL"
+    }
+  ]
+}

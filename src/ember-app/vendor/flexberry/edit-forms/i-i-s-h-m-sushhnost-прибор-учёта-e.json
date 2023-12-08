@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПриборыЗд",
+      "projection": "ПриборыЗдL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Прибор учёта",
+  "name": "IISHM_SushhnostПриборУчётаE",
+  "className": "ПриборУчётаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-прибор-учёта",
+      "modelProjection": "ПриборУчётаE"
+    }
+  ]
+}

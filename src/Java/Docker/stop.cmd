@@ -1,0 +1,1 @@
+docker-compose -p hm_sushhnost-java down

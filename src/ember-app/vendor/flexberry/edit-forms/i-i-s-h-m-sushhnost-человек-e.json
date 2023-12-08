@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Человек",
+  "name": "IISHM_SushhnostЧеловекE",
+  "className": "ЧеловекE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-человек",
+      "modelProjection": "ЧеловекE"
+    }
+  ]
+}

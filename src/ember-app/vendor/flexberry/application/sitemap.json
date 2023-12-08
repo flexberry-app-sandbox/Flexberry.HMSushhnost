@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "H m_ sushhnost",
+  "applicationTitle": "H m_ sushhnost",
+  "items": [
+    {
+      "link": null,
+      "menuName": "h-m-sushhnost",
+      "caption": "HM_Sushhnost",
+      "title": "HM_Sushhnost",
+      "children": [
+        {
+          "link": "i-i-s-h-m-sushhnost-прибор-учёта-l",
+          "menuName": null,
+          "caption": "Прибор учёта",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-sushhnost-человек-l",
+          "menuName": null,
+          "caption": "Человек",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-sushhnost-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-sushhnost-н-с-l",
+          "menuName": null,
+          "caption": "НС",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-sushhnost-показания-пр-l",
+          "menuName": null,
+          "caption": "Показания пр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-h-m-sushhnost-приборы-зд-l",
+          "menuName": null,
+          "caption": "Приборы зд",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Здание",
+      "projection": "ЗданиеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Приборы зд",
+  "name": "IISHM_SushhnostПриборыЗдE",
+  "className": "ПриборыЗдE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-приборы-зд",
+      "modelProjection": "ПриборыЗдE"
+    }
+  ]
+}

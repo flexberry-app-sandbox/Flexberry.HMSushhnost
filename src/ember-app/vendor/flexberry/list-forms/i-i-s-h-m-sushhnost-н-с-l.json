@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-sushhnost-н-с-e",
+  "editForm": "i-i-s-h-m-sushhnost-н-с-e",
+  "external": false,
+  "caption": "НС",
+  "name": "IISHM_SushhnostНСL",
+  "className": "НСL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-н-с",
+      "modelProjection": "НСL"
+    }
+  ]
+}

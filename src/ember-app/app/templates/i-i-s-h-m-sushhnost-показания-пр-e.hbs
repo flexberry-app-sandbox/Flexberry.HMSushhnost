@@ -1,0 +1,106 @@
+<h3 class="ui header">{{t "forms.i-i-s-h-m-sushhnost-показания-пр-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.id
+      class=(if (v-get validationModel "id" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-sushhnost-показания-пр-e.id-caption")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-id=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "id" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-показания-пр-e.dateTime-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.dateTime
+      class=(if (v-get validationModel "dateTime" "isInvalid") "error")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-dateTime=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "dateTime" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.t
+      class=(if (v-get validationModel "t" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-sushhnost-показания-пр-e.t-caption")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-t=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "t" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.p
+      class=(if (v-get validationModel "p" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-sushhnost-показания-пр-e.p-caption")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-p=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "p" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.m
+      class=(if (v-get validationModel "m" "isInvalid") "error")
+      label=(t "forms.i-i-s-h-m-sushhnost-показания-пр-e.m-caption")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-m=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "m" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-показания-пр-e.q-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.q
+      class=(if (v-get validationModel "q" "isInvalid") "error")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-q=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "q" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-h-m-sushhnost-показания-пр-e.приборыЗд-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.приборыЗд
+      displayAttributeName="id"
+      autocomplete=true
+      relationName="приборыЗд"
+      projection="ПриборыЗдL"
+      title=(t "forms.i-i-s-h-m-sushhnost-показания-пр-e.приборыЗд-caption")
+      readonly=readonly
+      componentName="приборыЗдLookup"
+      class=(if (v-get validationModel "приборыЗд" "isInvalid") "error")
+      data-test-i-i-s-h-m-sushhnost-показания-пр-e-приборыЗд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "приборыЗд" "message")}}
+  </div>
+</form>

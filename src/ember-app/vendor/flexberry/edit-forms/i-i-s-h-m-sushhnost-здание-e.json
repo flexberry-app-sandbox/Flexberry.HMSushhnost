@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Человек",
+      "projection": "ЧеловекL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Здание",
+  "name": "IISHM_SushhnostЗданиеE",
+  "className": "ЗданиеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-здание",
+      "modelProjection": "ЗданиеE"
+    }
+  ]
+}

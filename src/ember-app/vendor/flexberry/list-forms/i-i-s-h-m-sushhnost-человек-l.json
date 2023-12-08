@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-sushhnost-человек-e",
+  "editForm": "i-i-s-h-m-sushhnost-человек-e",
+  "external": false,
+  "caption": "Человек",
+  "name": "IISHM_SushhnostЧеловекL",
+  "className": "ЧеловекL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-человек",
+      "modelProjection": "ЧеловекL"
+    }
+  ]
+}

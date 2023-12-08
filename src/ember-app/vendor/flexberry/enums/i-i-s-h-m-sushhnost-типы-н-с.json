@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.HM_Sushhnost",
+  "className": "ТипыНС",
+  "enumObjects": {
+    "UrovZaryda": "",
+    "PrivT": "",
+    "PrivP": "",
+    "PrivM": ""
+  }
+}

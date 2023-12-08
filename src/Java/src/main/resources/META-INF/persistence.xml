@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>HM_Sushhnost.model.PriborUchyota</class>
+        <class>HM_Sushhnost.model.CHelovek</class>
+        <class>HM_Sushhnost.model.Zdanie</class>
+        <class>HM_Sushhnost.model.NS</class>
+        <class>HM_Sushhnost.model.PokazaniyaPr</class>
+        <class>HM_Sushhnost.model.PriboryZd</class>
+        <class>HM_Sushhnost.model.FlexberryAdvLimit</class>
+        <class>HM_Sushhnost.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>HM_Sushhnost.model.NewPlatformFlexberryServicesLock</class>
+        <class>HM_Sushhnost.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-h-m-sushhnost-показания-пр-e",
+  "editForm": "i-i-s-h-m-sushhnost-показания-пр-e",
+  "external": false,
+  "caption": "Показания пр",
+  "name": "IISHM_SushhnostПоказанияПрL",
+  "className": "ПоказанияПрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-показания-пр",
+      "modelProjection": "ПоказанияПрL"
+    }
+  ]
+}

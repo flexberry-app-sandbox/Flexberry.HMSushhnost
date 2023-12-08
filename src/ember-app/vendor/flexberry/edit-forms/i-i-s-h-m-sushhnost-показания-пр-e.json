@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПриборыЗд",
+      "projection": "ПриборыЗдL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Показания пр",
+  "name": "IISHM_SushhnostПоказанияПрE",
+  "className": "ПоказанияПрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-h-m-sushhnost-показания-пр",
+      "modelProjection": "ПоказанияПрE"
+    }
+  ]
+}
